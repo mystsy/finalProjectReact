@@ -7,10 +7,6 @@ import About from './components/About.js'
 
 // Collection
 import All from './components/All.js';
-import Business from './components/Business.js';
-import Travel from './components/Travel.js';
-import Tech from './components/Tech.js';
-import Accessories from './components/Accessories.js';
 
 import Categories from './components/Categories.js';
 import Products from './components/Products.js';
@@ -58,10 +54,6 @@ render() {
         <div>
             <Route path="/All" component={All}/>
             {/* <Route path="/Categories/:ID" render={({match}) => <Categories {...item.find(x => x.ID == match.params.ID)}/>}/> */}
-            <Route path="/Business" component={Business}/>
-            <Route path="/Travel" component={Travel}/>
-            <Route path="/Tech" component={Tech}/>
-            <Route path="/Accessories" component={Accessories}/>
             <Route path="/About" component={About}/>
             <Route exact path="/" component={Home}/>
             <Route exact path="/Home" component={Home}/>
